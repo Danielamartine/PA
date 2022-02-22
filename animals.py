@@ -53,7 +53,7 @@ class perro(Animal,Raza):
          self.nombre=nombre
          self.especie=especie
          self.peso=peso
-         pass
+         
 
 #Perro1 =        
 
