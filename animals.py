@@ -4,7 +4,8 @@ from typing_extensions import Self
 
 
 class Animal(object):
-
+    habitat=""
+    alimentacion=""
     def __init__(self,nombre,especie,peso,color):
         self.nombre=nombre
         self.especie=especie
@@ -12,15 +13,15 @@ class Animal(object):
         self.color=color
     def comunicacion(self,mensaje):
         return mensaje
-    def desplazamiento(self):
+    def desplazamiento(self,desplazamiento):
         self.desplazamiento = desplazamiento
-    def alimentacion(self):
+    def alimentacion(self,alimentacion):
         self.alimentacion = alimentacion
-    def habitat(self):
+    def habitat(self,habitat):
         self.habitat = habitat
 
-class Raza():
-     def __init__(self):
+class Raza(object):
+    def __init__(self):
          pass
     def begin(self,pitbull,labrador,dalmata):
         self.pitbull = pitbull
@@ -28,7 +29,7 @@ class Raza():
         self.dalmata = dalmata
          
 
-class Textura():
+class Textura(object):
     def __init__(self):
         pass
     def begin(self,escamas,manchas, rayas, melenuda):
@@ -39,8 +40,8 @@ class Textura():
 
 class pez(Animal):
 
-    textura=new Textura()
-    raza= new Raza() 
+    textura=Textura()
+    raza= Raza() 
     def __init__(self, nombre, especie, peso, color):
         self.nombre =nombre
         self.color= color
@@ -54,7 +55,7 @@ class perro(Animal,Raza):
          self.peso=peso
          pass
 
-Perro1 =        
+#Perro1 =        
 
 
              
